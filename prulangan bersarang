@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main ()
+{
+	int a;
+	
+	cout << "Masukan tinggi piramid: ";
+	cin >> a;
+	
+	cout << "Pola\n";
+	
+	for (int o = 1; o <= a; o++)
+	{
+		for (int p = a; p > o; p--)
+		{
+			cout << " ";
+		}
+		for (int k = 1; k <= (2*o - 1); k++)
+		{
+			cout << "*";
+		}
+		cout << endl;
+	}
+} 
